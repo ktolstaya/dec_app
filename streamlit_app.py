@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
-from io import BytesIO
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # Title
 st.title("Sample Decimitry demo")
@@ -18,9 +15,9 @@ if uploaded_file:
 
     # Placeholder for computation
     result = df.describe()  # Example computation
-    plt.figure()
-    plt.plot(df['date'], df['att'])
-    plt.show()
+    # plt.figure()
+    # plt.plot(df['date'], df['att'])
+    # plt.show()
 
     # Display result
     #st.write("Computation result (summary statistics):", result)
